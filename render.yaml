@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: desktop-os
+    env: static
+    staticPublishPath: dist
+    buildCommand: npm install && npm run build
+    
+# Açıklama:
+# - staticPublishPath: Vite build çıktısı olan dist klasörü
+# - buildCommand: Projeyi build etmek için gerekli komutlar
+# - env: static ile statik site olarak ayarlanır 
